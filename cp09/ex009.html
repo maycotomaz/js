@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            font-family: 18pt "Franklin Gothic Medium", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-size: cover;
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+            color: #020202;
+        }
+        
+        div#cp0{
+            margin-top: 20px;
+            font: 18px arial;
+            padding: 8px;
+            gap: 8px;
+        
+        }
+        
+            
+        
+    </style>
+</head>
+<body>
+    <h1>Em que Pais Voçé Mora?</h1>
+    <input type="text" ID="Nac" >
+    <input type="button" value="Comfirmar" onclick="comfirmar()">
+    <div id="cp0"></div>
+
+    <script>
+        function comfirmar() {
+            var Nac1 = document.getElementById('Nac')
+            var cp0 = document.querySelector('div#cp0')
+            var txt = (Nac.value)
+            
+            
+
+            
+            if (txt == 'Brasil')
+            {
+                 cp0.innerHTML += `<p>Vocé é Brasileiro</p>`
+
+            } else {
+               cp0.innerHTML  += `<p>Vocé é estrangeiro</p>` 
+            }
+
+            
+
+        }
+
+    </script>
+
+</body>
+</html>
